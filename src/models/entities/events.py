@@ -1,13 +1,16 @@
 from src.models.settings.base import Base
-from sqlalchemy import collum, String, Integer
+from sqlalchemy import Column, String, Integer
 
 class Events(Base):
     __tablename__ = "events"
 
-    id = collum(String, primary_key=True)
-    title = collum(String, nullable=False)
-    details = collum(String)
-    slug = collum(String, nullable=False)
-    maximum_attendees = collum(Integer)
+    id = Column(String, primary_key=True)
+    title = Column(String, nullable=False)
+    details = Column(String)
+    slug = Column(String, nullable=False)
+    maximum_attendees = Column(Integer, nullable=False)
+
+    def __repr__(self):
+        return f"Events [title={self.title}, maximum_attendees={self.maximum_attendees}]"
 
 
