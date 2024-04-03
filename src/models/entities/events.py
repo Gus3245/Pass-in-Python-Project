@@ -12,5 +12,7 @@ class Events(Base):
 
     def __repr__(self):
         return f"Events [title={self.title}, maximum_attendees={self.maximum_attendees}]"
+    
+    #Primeira Modificação <--->
 
 
