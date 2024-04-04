@@ -1,4 +1,5 @@
 from src.models.settings.connection import db_connection_handler
+from src.errors.errors_types.http_conflict import HttpConflictError
 from src.models.entities.attendees import Attendees
 from src.models.entities.check_ins import CheckIns
 from src.models.entities.events import Events
@@ -26,7 +27,7 @@ class AttendeesRepository:
                 return attendde_info
             
             except IntegrityError:
-                raise Exception("Participante já cadastrado!")
+                raise HttpConflictError("Participante já cadastrado!")
             
             except Exception as exception:
                database.session.rollback()
