@@ -1,38 +1,50 @@
 # Título do projeto
 
-Um parágrafo da descrição do projeto vai aqui
+Esse é um projeto teste para estudo de relacionamento com banco de dados, funcionamento web e ferramentas python.
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+
 
 ### 📋 Pré-requisitos
 
 De que coisas você precisa para instalar o software e como instalá-lo?
 
 ```
-Dar exemplos
+Utilizar VirtualENV VENV, um módulo que oferece suporte para criação de ambientes virtual do Python.
+
+Framework Flask para desenvolvimento web desenvolvido em Python. flask Cors Também.
+
+Dbeaver para gerenciamento e criação de banco de dados.
+
+SqlAchemy para relacionamento python com banco de dados.
 ```
 
 ### 🔧 Instalação
 
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-Diga como essa etapa será:
-
 ```
-Dar exemplos
+    pip install SQLAlchemy
+    pip install virtualenv
+    pip install Flask
+    pip install Flask-Cors
+
+    Comando para ativar o ambiente virtual
+
+    PowerShell -- PS C:\> <venv>\Scripts\Activate.ps1
+
+
 ```
 
 E repita:
 
 ```
-Até finalizar
+    para iniciar o ambiente virtual deve-se -- <venv>\Scripts\Activate.ps1, 
+    e após isso deve-se subir localmente o server Flask -- python3 .\app.py
 ```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Executando os testes
 
@@ -40,10 +52,12 @@ Explicar como executar os testes automatizados para este sistema.
 
 ### 🔩 Analise os testes de ponta a ponta
 
-Explique que eles verificam esses testes e porquê.
+
 
 ```
-Dar exemplos
+ Após  o servidor Flask já estiver localmente upado, deve-se utilizar o 
+ Postman para utilizar as ferramentas GET And POST.
+ ATENÇÃO: O Projeto ainda não possui uma interface.
 ```
 
 ### ⌨️ E testes de estilo de codificação
@@ -78,10 +92,8 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* **Gustavo Moreira** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/Enderdragon3245)
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
 ## 📄 Licença
 
@@ -92,8 +104,3 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](h
 * Conte a outras pessoas sobre este projeto 📢;
 * Convide alguém da equipe para uma cerveja 🍺;
 * Um agradecimento publicamente 🫂;
-* etc.
-
-
----
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
